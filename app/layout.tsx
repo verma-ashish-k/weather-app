@@ -1,11 +1,5 @@
 import './styles/globals.css';
-import { Montserrat, Teko, Kumbh_Sans } from 'next/font/google';
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-montserrat',
-});
+import { Teko, Kumbh_Sans } from 'next/font/google';
 
 const teko = Teko({
   weight: ['300', '400', '500', '600', '700'],
@@ -32,10 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang='en'
-      className={`${montserrat.variable} ${teko.variable} ${kumbhSans.variable}`}
-    >
+    <html lang='en' className={` ${teko.variable} ${kumbhSans.variable}`}>
       <body className='bg-sky-100'>{children}</body>
     </html>
   );

@@ -54,32 +54,36 @@ export default function Home() {
   return (
     <>
       <main className='items-center min-w-full justify-center w-full px-5 text-center mt-20'>
-        <div
-          className='flex flex-row justify-center gap-3 lg:gap-16'
-          style={{
-            fontFamily: 'var(--font-kumbh-sans), sans-serif',
-          }}
-        >
+        <div className='flex flex-row justify-center gap-3 lg:gap-16'>
           <h1
             className={`text-xl lg:text-2xl tracking-wider font-extralight cursor-pointer ${
-              selectedCity === 'Calgary' ? 'font-bold text-sky-600' : ''
+              selectedCity === 'Calgary' ? 'font-extrabold text-sky-600' : ''
             }`}
+            style={{
+              fontFamily: 'var(--font-kumbh-sans), sans-serif',
+            }}
             onClick={() => handleCitySelection('Calgary')}
           >
             CALGARY
           </h1>
           <h1
             className={`text-xl lg:text-2xl tracking-wider font-extralight cursor-pointer ${
-              selectedCity === 'Vancouver' ? ' font-bold text-sky-600' : ''
+              selectedCity === 'Vancouver' ? ' font-extrabold text-sky-600' : ''
             }`}
+            style={{
+              fontFamily: 'var(--font-kumbh-sans), sans-serif',
+            }}
             onClick={() => handleCitySelection('Vancouver')}
           >
             VANCOUVER
           </h1>
           <h1
             className={`text-xl lg:text-2xl tracking-wider font-extralight cursor-pointer ${
-              selectedCity === 'Toronto' ? 'font-bold text-sky-600' : ''
+              selectedCity === 'Toronto' ? 'font-extrabold text-sky-600' : ''
             }`}
+            style={{
+              fontFamily: 'var(--font-kumbh-sans), sans-serif',
+            }}
             onClick={() => handleCitySelection('Toronto')}
           >
             TORONTO
