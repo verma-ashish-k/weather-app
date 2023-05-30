@@ -1,7 +1,7 @@
 import { WeatherResponse } from './weatherResponse';
 
 const API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
-const API_ENDPOINT = 'https://api.weatherapi.com/v1/forecast.json';
+const API_ENDPOINT = 'http://api.weatherapi.com/v1/forecast.json';
 
 export const fetchWeatherData = async (city: string): Promise<WeatherResponse | null> => {
   try {
