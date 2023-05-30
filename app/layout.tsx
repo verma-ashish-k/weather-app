@@ -1,4 +1,4 @@
-import './globals.css';
+import './styles/globals.css';
 import { Montserrat, Teko, Kumbh_Sans } from 'next/font/google';
 
 const montserrat = Montserrat({

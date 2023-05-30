@@ -57,7 +57,7 @@ export default function Home() {
         <div className='flex flex-row justify-center gap-3 lg:gap-16'>
           <h1
             className={`text-xl lg:text-2xl tracking-wider font-extralight ${
-              selectedCity === 'Calgary' ? 'font-extrabold text-sky-600' : ''
+              selectedCity === 'Calgary' ? 'font-bold text-sky-600' : ''
             }`}
             onClick={() => handleCitySelection('Calgary')}
           >
@@ -65,7 +65,7 @@ export default function Home() {
           </h1>
           <h1
             className={`text-xl lg:text-2xl tracking-wider font-extralight ${
-              selectedCity === 'Vancouver' ? ' font-extrabold text-sky-600' : ''
+              selectedCity === 'Vancouver' ? ' font-bold text-sky-600' : ''
             }`}
             onClick={() => handleCitySelection('Vancouver')}
           >
@@ -73,7 +73,7 @@ export default function Home() {
           </h1>
           <h1
             className={`text-xl lg:text-2xl tracking-wider font-extralight ${
-              selectedCity === 'Toronto' ? 'font-extrabold text-sky-600' : ''
+              selectedCity === 'Toronto' ? 'font-bold text-sky-600' : ''
             }`}
             onClick={() => handleCitySelection('Toronto')}
           >
