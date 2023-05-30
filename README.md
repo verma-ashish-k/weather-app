@@ -36,7 +36,7 @@ Demo
 Demo of the app
 
 Contributing
-Contributions are always welcome! See CONTRIBUTING.md for ways to get started.
+Contributions are always welcome!
 
 License
 This project is licensed under the MIT License.
