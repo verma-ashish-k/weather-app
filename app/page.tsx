@@ -64,8 +64,10 @@ export default function Home() {
       <main className='items-center min-w-full justify-center w-full px-5 text-center mt-20'>
         <div className='flex flex-row justify-center gap-3 lg:gap-16'>
           <h1
-            className={`text-xl lg:text-2xl tracking-wider font-extralight cursor-pointer ${
-              selectedCity === 'Calgary' ? 'font-extrabold text-sky-600' : ''
+            className={`text-xl lg:text-2xl tracking-wider  cursor-pointer ${
+              selectedCity === 'Calgary'
+                ? 'font-extrabold text-sky-600'
+                : 'font-extralight'
             }`}
             style={{
               fontFamily: 'var(--font-kumbh-sans), sans-serif',
@@ -75,8 +77,10 @@ export default function Home() {
             CALGARY
           </h1>
           <h1
-            className={`text-xl lg:text-2xl tracking-wider font-extralight cursor-pointer ${
-              selectedCity === 'Vancouver' ? ' font-extrabold text-sky-600' : ''
+            className={`text-xl lg:text-2xl tracking-wider  cursor-pointer ${
+              selectedCity === 'Vancouver'
+                ? ' font-extrabold text-sky-600'
+                : 'font-extralight'
             }`}
             style={{
               fontFamily: 'var(--font-kumbh-sans), sans-serif',
@@ -86,8 +90,10 @@ export default function Home() {
             VANCOUVER
           </h1>
           <h1
-            className={`text-xl lg:text-2xl tracking-wider font-extralight cursor-pointer ${
-              selectedCity === 'Toronto' ? 'font-extrabold text-sky-600' : ''
+            className={`text-xl lg:text-2xl tracking-wider  cursor-pointer ${
+              selectedCity === 'Toronto'
+                ? 'font-extrabold text-sky-600'
+                : 'font-extralight'
             }`}
             style={{
               fontFamily: 'var(--font-kumbh-sans), sans-serif',
