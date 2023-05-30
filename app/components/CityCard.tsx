@@ -45,7 +45,7 @@ const Card: React.FC<CardProps> = ({
           {mainHeading}
         </h2>
         <div className='flex items-center justify-center'>
-          <Image src={mainIcon} alt='main-icon' width={150} height={150} />
+          <Image src={mainIcon} alt='main-icon' width={100} height={100} />
           <div className='ml-2 items-start'>
             <p
               className='text-6xl text-left'

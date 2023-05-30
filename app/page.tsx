@@ -6,10 +6,18 @@ import { fetchWeatherData } from './api/weatherApi';
 import { WeatherResponse } from './api/weatherResponse';
 import weatherConditions from './data/weatherConditions.json';
 
-const weatherConditionIcons: Record<number, string> = {};
+const weatherConditionIcons: Record<string, Record<number, string>> = {
+  day: {},
+  night: {},
+};
 
 for (let condition of weatherConditions) {
-  weatherConditionIcons[condition.code] = `/weatherIcons/${condition.icon}.png`;
+  weatherConditionIcons.day[
+    condition.code
+  ] = `/weatherIcons/day/${condition.icon}.png`;
+  weatherConditionIcons.night[
+    condition.code
+  ] = `/weatherIcons/night/${condition.icon}.png`;
 }
 
 function getDayOfWeek(dateString: string) {
@@ -95,13 +103,15 @@ export default function Home() {
             <Card
               mainHeading='Today'
               mainIcon={
-                weatherConditionIcons[weatherData.current?.condition.code] ?? ''
+                weatherConditionIcons[
+                  weatherData.current?.is_day ? 'day' : 'night'
+                ][weatherData.current?.condition.code] ?? ''
               }
               mainText={weatherData.current?.condition.text ?? ''}
               temperature={weatherData.current?.temp_c?.toString() ?? ''}
               sections={forecastData.map((day) => ({
                 heading: day.date ?? '',
-                icon: weatherConditionIcons[day.day?.condition.code],
+                icon: weatherConditionIcons.day[day.day?.condition.code],
                 text: day.day?.maxtemp_c?.toString() ?? '',
               }))}
               selectedCity={selectedCity}
