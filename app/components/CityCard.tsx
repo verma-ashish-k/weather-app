@@ -34,7 +34,7 @@ const Card: React.FC<CardProps> = ({
   forecast,
 }) => {
   return (
-    <div className='shadow-lg p-0 bg-sky-50 rounded-lg grid grid-cols-1 border-4 border-white'>
+    <div className='shadow-lg p-0 bg-sky-100 rounded-lg grid grid-cols-1 border-4 border-white'>
       <div className='p-6 flex flex-col items-center justify-center border-b-2 border-white'>
         <h2
           className='text-2xl font-extralight mb-4'

@@ -36,7 +36,7 @@ export default function RootLayout({
       lang='en'
       className={`${montserrat.variable} ${teko.variable} ${kumbhSans.variable}`}
     >
-      <body className='bg-sky-50'>{children}</body>
+      <body className='bg-sky-100'>{children}</body>
     </html>
   );
 }
