@@ -8,14 +8,14 @@ const montserrat = Montserrat({
 });
 
 const teko = Teko({
-  weight: ['400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-teko',
 });
 
 const kumbhSans = Kumbh_Sans({
-  weight: ['100', '400', '500', '600', '700', '800'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-kumbh-sans',

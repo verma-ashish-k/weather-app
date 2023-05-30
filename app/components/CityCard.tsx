@@ -38,7 +38,9 @@ const Card: React.FC<CardProps> = ({
       <div className='p-6 flex flex-col items-center justify-center border-b-2 border-white'>
         <h2
           className='text-2xl font-extralight mb-4'
-          style={{ fontFamily: 'var(--font-kumbhSans), sans-serif' }}
+          style={{
+            fontFamily: 'var(--font-kumbh-sans), sans-serif',
+          }}
         >
           {mainHeading}
         </h2>
