@@ -32,9 +32,6 @@ Copy code
 npm run dev
 Your app should now be running on http://localhost:3000.
 
-Demo
-Demo of the app
-
 Contributing
 Contributions are always welcome!
 
